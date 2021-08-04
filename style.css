@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: rgb(6,8,13);
+    background: linear-gradient(90deg, rgba(6,8,13,1) 0%, rgba(20,32,86,1) 100%);
+    font-family: 'Manrope', sans-serif;
+}
+
+.container {    
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;    
+}
+
+.topBar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgb(6,8,13);
+    background: linear-gradient(90deg, rgba(6,8,13,1) 0%, rgba(20,32,86,1) 100%);    
+    z-index: 99;
+}
+
+.search {    
+    width: 40%;
+    height: 1.5rem;
+    /* margin: 5rem auto; */
+    margin: .5rem auto;
+    border-radius: 15px;    
+    display: flex;
+    padding: 10px;      
+    border: 1px solid #35394f;  
+    /* position: fixed;
+    top: 0; */
+}
+
+.search i {
+    opacity: .5;
+    color: #FFF;
+}
+
+.search input {
+    width: 100%;            
+    font-size: 20px;
+    background-color: transparent;
+    outline: none;    
+    margin-left: 10px;    
+    opacity: .8;
+    color: #FFF;
+    border: none;
+}
+
+.searched {                
+    margin-top: 5rem;
+    color: #FFF;
+}
+
+.searched h3 {
+    width: 75%;
+    margin: 0 auto;        
+}
+
+.video {
+    width: 80%;
+    height: 300px;
+    margin: 0 auto;        
+    text-align: center;
+    display: none;    
+    margin-bottom: 2rem;
+}
+
+.youtube-video {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.searched__videos {    
+    width: 80%;
+    margin: 0 auto;        
+}
+
+.watcher-later__video {        
+    height: 7.2rem;    
+    display: flex;        
+    padding: 1rem 0;        
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.watcher-later__video:hover {
+    background-color: rgba(20,32,86,1);    
+}
+
+.watcher-later__video .video-thumbnail {
+    margin: 0 15px;        
+}
+
+.watcher-later__video .video-thumbnail img {    
+    border-radius: 20px;
+}
+
+.watcher-later__video .video-infos {
+    overflow: hidden;      
+}
+
+.watcher-later__video .video-infos .video-title {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px 0;
+}
+
+.watcher-later__video .video-infos .video-description {
+    font-size: 13px;
+    padding: 5px 0;
+    opacity: .7;    
+}
